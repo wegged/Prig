@@ -53,6 +53,22 @@
 #include <prig/DisassemblerCommand.h>
 #endif
 
+#ifndef PRIG_INSTALLERCOMMAND_H
+#include <prig/InstallerCommand.h>
+#endif
+
+#ifndef PRIG_LISTERCOMMAND_H
+#include <prig/ListerCommand.h>
+#endif
+
+#ifndef PRIG_UPDATERCOMMAND_H
+#include <prig/UpdaterCommand.h>
+#endif
+
+#ifndef PRIG_UNINSTALLERCOMMAND_H
+#include <prig/UninstallerCommand.h>
+#endif
+
 #ifndef URASANDESU_SWATHE_H
 #include <Urasandesu/Swathe.h>
 #endif

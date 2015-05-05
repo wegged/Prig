@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF9F1B81-8558-44C5-8CC6-84C0E112A5AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Urasandesu.Prig.Delegates</RootNamespace>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Urasandesu.Prig.Delegates.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug%28.NET 3.5%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug%28.NET 3.5%29\AnyCPU\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;_NET_3_5</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>Urasandesu.Prig.Delegates.0404.v2.0.50727.v0.1.0.0.MSIL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release%28.NET 3.5%29|AnyCPU'">
+    <OutputPath>..\Release%28.NET 3.5%29\AnyCPU\</OutputPath>
+    <DefineConstants>TRACE;_NET_3_5</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>Urasandesu.Prig.Delegates.0404.v2.0.50727.v0.1.0.0.MSIL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug%28.NET 4%29|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug%28.NET 4%29\AnyCPU\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;_NET_4</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>Urasandesu.Prig.Delegates.0404.v4.0.30319.v0.1.0.0.MSIL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release%28.NET 4%29|AnyCPU'">
+    <OutputPath>..\Release%28.NET 4%29\AnyCPU\</OutputPath>
+    <DefineConstants>TRACE;_NET_4</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AssemblyName>Urasandesu.Prig.Delegates.0404.v4.0.30319.v0.1.0.0.MSIL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IndirectionDelegates.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndirectionDelegates.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IndirectionDelegates.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IndirectionDelegates.g.cs</LastGenOutput>
+    </None>
+    <None Include="Urasandesu.Prig.Delegates.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NAnonym\Urasandesu.NAnonym\Urasandesu.NAnonym.csproj">
+      <Project>{c04a5e86-30e1-4c38-b916-324d000e240e}</Project>
+      <Name>Urasandesu.NAnonym</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Urasandesu.Prig.Framework\Urasandesu.Prig.Framework.csproj">
+      <Project>{b4f8abb2-2feb-484c-9ef5-404c88c44e1a}</Project>
+      <Name>Urasandesu.Prig.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\TextTemplating\Microsoft.TextTemplating.targets" Condition="false" />
+  <PropertyGroup>
+    <TransformOnBuild>true</TransformOnBuild>
+    <!-- Other properties can be inserted here -->
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

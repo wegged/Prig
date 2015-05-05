@@ -48,13 +48,33 @@
 #include <prig/DisassemblerCommandFwd.h>
 #endif
 
+#ifndef PRIG_INSTALLERCOMMANDFWD_H
+#include <prig/InstallerCommandFwd.h>
+#endif
+
+#ifndef PRIG_LISTERCOMMANDFWD_H
+#include <prig/ListerCommandFwd.h>
+#endif
+
+#ifndef PRIG_UPDATERCOMMANDFWD_H
+#include <prig/UpdaterCommandFwd.h>
+#endif
+
+#ifndef PRIG_UNINSTALLERCOMMANDFWD_H
+#include <prig/UninstallerCommandFwd.h>
+#endif
+
 namespace prig { 
 
     typedef boost::variant<
         boost::shared_ptr<HelpCommand>, 
         boost::shared_ptr<RunnerCommand>, 
         boost::shared_ptr<StubberCommand>, 
-        boost::shared_ptr<DisassemblerCommand>
+        boost::shared_ptr<DisassemblerCommand>, 
+        boost::shared_ptr<InstallerCommand>, 
+        boost::shared_ptr<ListerCommand>, 
+        boost::shared_ptr<UpdaterCommand>, 
+        boost::shared_ptr<UninstallerCommand>
     > Command;
 
     namespace ProgramOptionDetail {

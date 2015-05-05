@@ -36,10 +36,12 @@ namespace Urasandesu { namespace Prig {
 
     namespace PrigDataDetail {
 
+        struct IndirectionDelegates;
         struct PrigData;
 
     }   // namespace PrigDataDetail {
     
+    using PrigDataDetail::IndirectionDelegates;
     using PrigDataDetail::PrigData;
     
 }}   // namespace Urasandesu { namespace Prig { 
